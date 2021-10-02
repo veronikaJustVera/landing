@@ -100,6 +100,38 @@ body {
     background-size: cover;
     z-index: 99999;
 }
+.top-button {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  bottom: 155px;
+  right: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: .4s;
+  cursor: pointer;
+  z-index: 9999;
+}
+.top-button:hover {
+    opacity: .7;
+}
+.top-button-show {
+  display: block;
+}
+.top-button::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 13px;
+    left: 9px;
+    padding: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
 /** HEADER **/
 .header {
     line-height: 100px;
@@ -674,6 +706,17 @@ footer {
     }
 }
 @media (max-width: 800px) {
+    .top-button {
+      width:  30px;
+      height: 30px;
+      bottom: 30px;
+      right: 5px;
+    }
+    .top-button::after {
+        top: 10px;
+        left: 7px;
+        padding: 6px;
+    }
     .number, .title {
         margin: 0;
         padding: 0 !important;
