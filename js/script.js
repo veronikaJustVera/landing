@@ -17,7 +17,7 @@ window.onload = function() {
             nextArrow: '<span class="slickArrow slickArrow--next"></span>',
           });
     }
-}
+};
 // scroll top
 (function() {
     function trackScroll() {

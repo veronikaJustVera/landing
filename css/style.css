@@ -111,7 +111,7 @@ body {
     opacity: .7;
 }
 .top-button-show {
-  display: block;
+  display: block !important;
 }
 .top-button::after {
     content: '';
@@ -137,10 +137,6 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     z-index: 999999;
-}
-#header-plug {
-    width: 1px;
-    height: 100px;
 }
 .logo-img {
     vertical-align: middle;
