@@ -161,11 +161,15 @@ nav a
 }
 /** HEADER ENDS **/
 /** MAIN BLOCK **/
-.wrapper-main {
-    background-image: -o-radial-gradient(62% 41%, circle closest-side, #227d8a, #1C2935);
-    background-image: radial-gradient(circle closest-side at 62% 41%, #227d8a, #1C2935);
-}
 .main {
+    background-image: url('../images/main-background.png'), -o-radial-gradient(62% 41%, circle closest-side, #227d8a, #1C2935);
+    background-image: url('../images/main-background.png'), radial-gradient(circle closest-side at 62% 41%, #227d8a, #1C2935);
+    background-position: center 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+}
+.wrapper-main {
     max-width: 1160px;
     width: 100%;
     margin: 0 auto;
