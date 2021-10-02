@@ -1,18 +1,4 @@
 window.onload = function() {
-    // FIXED HEADER
-    var header = document.querySelector('#header');
-    var header_plug = document.querySelector('#header-plug');
-    var initialPosition = header.offsetTop;
-    addEventListener('scroll', function (event) {
-        if (window.scrollY > initialPosition) {
-            header.classList.add('fixed');
-            header_plug.style.display="block";
-        } else if (header.classList.contains('fixed')) {
-            header.classList.remove('fixed');
-            header_plug.style.display="none";
-        }
-    });
-
     // SLIDER
     if (window.matchMedia("(max-width: 1078px)").matches) {
         $('.benefit-block').slick(
