@@ -93,13 +93,6 @@ body {
     right: 0;
     left: 0;
 }
-.donut {
-    position: absolute;
-    overflow: hidden;
-    background-image: url("../images/donut.png");
-    background-size: cover;
-    z-index: 99999;
-}
 .top-button {
   position: fixed;
   display: none;
@@ -713,8 +706,8 @@ footer {
       right: 5px;
     }
     .top-button::after {
-        top: 10px;
-        left: 7px;
+        top: 9px;
+        left: 6.48px;
         padding: 6px;
     }
     .number, .title {

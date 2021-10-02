@@ -31,33 +31,6 @@ window.onload = function() {
             nextArrow: '<span class="slickArrow slickArrow--next"></span>',
           });
     }
-    // DONUTS
-    generate_donuts();
-}
-function generate_donuts() {
-    var donutField = document.querySelector("#donuts");
-
-    var donutMinSize = 10;
-    var donutMaxSize = 60;
-
-    var screenWidth  = $(document).width()  - 60;    
-    var screenHeight = $(document).height() - 60;  
-	var count = 6;
-	let donutLoop = 1;
-  
-	while (donutLoop < count) {
-		var size = (Math.floor( (Math.random() * (donutMaxSize - donutMinSize)) )) + (donutMinSize + 1);
-    
-        var left = Math.floor(Math.random() * screenWidth);
-        var top = Math.floor(Math.random() * screenHeight);
-        var blur = Math.floor(Math.random() * 5);
-
-		donutField.innerHTML +=
-			'<div class="donut" ' +
-            'style="width:'+size+'px;'+'height:' + size + 'px;top:'+top+'px;left:'+left+'px;filter:blur('+blur+'px);"></div>';
-
-		donutLoop++;
-    }
 }
 // scroll top
 (function() {
