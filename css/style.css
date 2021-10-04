@@ -42,14 +42,15 @@
     margin: 0;
     padding: 0;
     color: #FFFFFF; 
+    font-style: normal;
+    font-family: "Montserrat";
+    font-size: 24px;
 }
 a {
     text-decoration: none;
 }
 .button {
-    font-family: "Montserrat";
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
@@ -157,7 +158,6 @@ nav a
     vertical-align: middle;
     margin-left: 70px;
     font-family: "Avenir";
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
@@ -196,10 +196,8 @@ nav a
 }
 .slogn {
     text-transform: uppercase;
-    font-family: "Montserrat";
     width: 588px;
     font-size: calc(1em + 2.6vw);
-    font-style: normal;
     font-weight: 800;
     line-height: 61px;
     letter-spacing: 0em;
@@ -209,9 +207,6 @@ nav a
 .description {
     height: 91px;
     max-width: 450px;
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-style: normal;
     font-weight: 300;
     line-height: 29px;
     letter-spacing: 0em;
@@ -234,9 +229,7 @@ nav a
     background: -webkit-gradient(linear, right top, left top, color-stop(61.46%, #A8579B), to(rgba(171, 85, 154, 0)));
     background: linear-gradient(270deg, #A8579B 61.46%, rgba(171, 85, 154, 0) 100%);
     text-align: right;
-    font-family: "Montserrat";
     font-size: calc(1em + 1vw);
-    font-style: normal;
     font-weight: 700;
     line-height: 34px;
     letter-spacing: 0em;
@@ -297,8 +290,6 @@ nav a
 }
 .bottom-block-title {
     max-width: 239px;
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 800;
     font-size: 35px;
     line-height: 43px;
@@ -323,7 +314,6 @@ nav a
     margin: auto;
 }
 .number {
-    font-family: "Montserrat";
     text-transform: uppercase;
     background: -o-linear-gradient(left, #19C9D2 0%, #638EB5 38.94%, #AE5298 100%);
     background: -webkit-gradient(linear, left top, right top, from(#19C9D2), color-stop(38.94%, #638EB5), to(#AE5298));
@@ -331,17 +321,13 @@ nav a
     display: table;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-style: normal;
     font-weight: bold;
     font-size: 80px;
     line-height: 80px;
     margin-top: 10px;
 }
 .title {
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 300;
-    font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
 }
@@ -384,9 +370,7 @@ nav a
 }
 .benefit-block-heading {
     text-transform: uppercase;
-    font-family: "Montserrat";
     font-size: 50px;
-    font-style: normal;
     font-weight: 800;
     line-height: 61px;
     letter-spacing: 0em;
@@ -399,7 +383,6 @@ nav a
     margin: 0 auto;
 }
 .benefit-block-number {    
-    font-family: "Montserrat";
     text-transform: uppercase;
     background: -o-linear-gradient(90.47deg, #19C9D2 33.51%, #638EB5 52.48%, #AE5298 82.25%);
     background: linear-gradient(359.53deg, #19C9D2 33.51%, #638EB5 52.48%, #AE5298 82.25%);
@@ -407,7 +390,6 @@ nav a
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 150px;
-    font-style: normal;
     font-weight: 700;
     line-height: 183px;
     letter-spacing: 0em;
@@ -427,9 +409,7 @@ nav a
 }
 .benefit-block-title {
     text-transform: uppercase;
-    font-family: "Montserrat";
     font-size: 35px;
-    font-style: normal;
     font-weight: 800;
     line-height: 80px;
     letter-spacing: 0em;
@@ -438,9 +418,6 @@ nav a
     z-index: 2;
 }
 .benefit-block-description {
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-style: normal;
     font-weight: 300;
     line-height: 29px;
     letter-spacing: 0em;
@@ -466,8 +443,6 @@ nav a
     text-transform: uppercase;
     display: block;
     width: 100%;
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: bold;
     font-size: 120px;
     line-height: 146px;
@@ -480,9 +455,7 @@ nav a
 }
 .welcome-title {
     text-transform: uppercase;
-    font-family: "Montserrat";
     font-size: 50px;
-    font-style: normal;
     font-weight: 800;
     line-height: 61px;
     letter-spacing: 0em;
@@ -492,9 +465,6 @@ nav a
     padding-top: 67px;
 }
 .welcome-description {
-    font-family: "Montserrat";
-    font-size: 24px;
-    font-style: normal;
     font-weight: 300;
     line-height: 29px;
     letter-spacing: 0em;
@@ -543,7 +513,6 @@ footer {
     list-style: none; 
 }
 .footer-inner { 
-    font-family: "Montserrat";
     max-width: 1120px; 
     margin-left: auto; 
     margin-right: auto; 
