@@ -76,6 +76,15 @@ a {
 .button-red:hover {
     background-color: #FF0000;
 }
+.button-blue:disabled,
+.button-blue[disabled]{
+  border: 1px solid #C7C7C7;
+  color: #C7C7C7;
+}
+.button-red:disabled,
+.button-red[disabled]{
+  background-color: #C7C7C7;
+}
 body {
     background-color: #1C2935;
 }
