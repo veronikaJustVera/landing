@@ -351,7 +351,8 @@ nav a
     margin-top: 30px;
 }
 .benefits-block {
-    background: url(../images/bg-elipse.png), linear-gradient(to bottom, #1c2935 20%, #1e2f3e 0%) ;
+    /*background-color: #1e2f3e;*/
+    background: url(../images/bg-elipse.png), linear-gradient(to bottom,#1c2935  100%, #1e2f3e 0%) ;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -438,11 +439,13 @@ nav a
 /** BENEFITS BLOCK ENDS **/
 /** WELCOME BLOCK **/
 .welcome-block {
-    background-image: -o-radial-gradient(8% 37%, circle closest-side, #1d3945, #1c2935);
-    background-image: radial-gradient(circle closest-side at 8% 37%, #1d3945, #1c2935);
+    background-color: #1c2935;
+    background-image: url(../images/sweet_tv.png);/*, linear-gradient(to top,#1c2935 0%,#1e2f3e 100%);*/
     width: 100%;
     text-align: center;
     padding-bottom: 95px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .welcome-background::after {
     content: 'познайомся';
@@ -716,6 +719,10 @@ footer {
         width: 230px;
         padding: 15px 0;
     }
+    .welcome-title {
+        font-size: calc(1em + 2.8vw);
+        line-height: 52px;
+    }
 }
 @media (max-width: 900px) {    
     .benefit-block {
@@ -938,7 +945,7 @@ footer {
         width: 196px;
         height: 39.2px;
         font-size: 14px;
-        padding: 12px 0;
+        padding: 13px 0;
     }
     .main-button {
         margin-top: 30px;
@@ -952,9 +959,24 @@ footer {
     }
     .benefit-button {
         padding: 8px 0;
+        margin-bottom: 50px;
     }
     .slick-dots {
         left: 0px;
+    }    
+    .welcome-button::after {
+        background-image: url("../images/donut.png");
+        background-size: 20px 20px;
+        display: inline-block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        content: "";
+        top: -1px;
+        left: 180px;
+    }
+    .welcome-button {
+        padding: 8px 0;
     }
 }
 @media (max-width: 545px) {
@@ -972,22 +994,11 @@ footer {
         width: 218px;
     }
     .welcome-background::after {
-        font-size: 42px;
+        font-size: 50px;
     }
     .button {
         font-size: 14px;
         width: 196px;
-    }
-    .welcome-button::after {
-        background-image: url("../images/donut.png");
-        background-size: 20px 20px;
-        display: inline-block;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        content: "";
-        top: -1px;
-        left: 180px;
     }
     .benefit-block-heading {
         font-size: 20px;
@@ -1041,6 +1052,12 @@ footer {
     }
     .bottom-block-title {
         font-size: calc(1em + 2vw);
+    }
+    .welcome-background::after {
+        font-size: 45px;
+    }
+    .benefit-block-heading {
+        line-height: 35px;
     }
 }
 @media (max-width: 330px) {
