@@ -107,6 +107,8 @@ body {
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid #fff;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
   cursor: pointer;
   z-index: 9999;
@@ -126,7 +128,8 @@ body {
     padding: 8px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
-    transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
 /** HEADER **/
@@ -227,8 +230,8 @@ nav a
     width: 100%;
     top: 147px;
     border-radius: 0px;
-    background: -webkit-gradient(linear, right top, left top, color-stop(61.46%, #A8579B), to(rgba(171, 85, 154, 0)));
     background: -o-linear-gradient(right, #A8579B 61.46%, rgba(171, 85, 154, 0) 100%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(61.46%, #A8579B), to(rgba(171, 85, 154, 0)));
     background: linear-gradient(270deg, #A8579B 61.46%, rgba(171, 85, 154, 0) 100%);
     text-align: right;
     font-family: "Montserrat";
@@ -264,17 +267,25 @@ nav a
     float: right;
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin-right: 45px;
 }
 .main-bottom-block {
     max-width: 999px;
     margin: 40px auto;
     margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .main-button-mobile {
     display: none;
@@ -314,8 +325,8 @@ nav a
 .number {
     font-family: "Montserrat";
     text-transform: uppercase;
-    background: -webkit-gradient(linear, left top, right top, from(#19C9D2), color-stop(38.94%, #638EB5), to(#AE5298));
     background: -o-linear-gradient(left, #19C9D2 0%, #638EB5 38.94%, #AE5298 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#19C9D2), color-stop(38.94%, #638EB5), to(#AE5298));
     background: linear-gradient(90deg, #19C9D2 0%, #638EB5 38.94%, #AE5298 100%);
     display: table;
     -webkit-background-clip: text;
@@ -352,6 +363,8 @@ nav a
 }
 .benefits-block {
     /*background-color: #1e2f3e;*/
+    background: url(../images/bg-elipse.png), -webkit-gradient(linear,left top, left bottom,color-stop(100%, #1c2935), color-stop(0%, #1e2f3e)) ;
+    background: url(../images/bg-elipse.png), -o-linear-gradient(top,#1c2935  100%, #1e2f3e 0%) ;
     background: url(../images/bg-elipse.png), linear-gradient(to bottom,#1c2935  100%, #1e2f3e 0%) ;
     background-size: cover;
     background-position: center top;
@@ -361,6 +374,7 @@ nav a
     max-width: 1157px;
     margin: 0 auto;
     gap: 20px;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 5rem;
@@ -929,7 +943,8 @@ footer {
         font-size: calc(1em + 2vw);
     }
     .main-text-wrapper {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .main-text {
         margin-top: 35px;
