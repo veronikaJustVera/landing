@@ -79,12 +79,16 @@ body {
     background-color: #1C2935;
 }
 .slick-dots li {
-    width: 21px !important;
+    width: 25px !important;
     height: 1px !important;
     border: 1px solid #A7A7A7;
+    margin-right: 12px !important;
 }
 .slick-dots .slick-active  {
     border: 1px solid #00F3FF;
+}
+.slick-dots {
+    left: 15px;
 }
 #donuts {
     position: absolute;
@@ -190,7 +194,7 @@ nav a
 .slogn {
     text-transform: uppercase;
     font-family: "Montserrat";
-    width: 610px;
+    width: 588px;
     font-size: calc(1em + 2.6vw);
     font-style: normal;
     font-weight: 800;
@@ -347,16 +351,21 @@ nav a
     margin-top: 30px;
 }
 .benefits-block {
-    background-image: url(../images/bg-elipse.png);
-    background-size: contain;
-    background-size: 100%;
+    background: url(../images/bg-elipse.png), linear-gradient(to bottom, #1c2935 20%, #1e2f3e 0%) ;
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
 }
 .benefit-block {
     max-width: 1157px;
     margin: 0 auto;
-    margin-top: 130px;
-    margin-bottom: 70px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 5rem;
+    grid-gap: 1rem;
+    margin-top: 150px;
+    padding-left: 70px;
 }
 .benefit-block-heading {
     text-transform: uppercase;
@@ -372,7 +381,7 @@ nav a
 .benefit-block-item {
     display: inline-block;
     position: relative;
-    margin: 0 4.8%;
+    margin: 0 auto;
 }
 .benefit-block-number {    
     font-family: "Montserrat";
@@ -423,7 +432,7 @@ nav a
     text-align: left;
 }
 .benefit-button {
-    margin-top: 50px;
+    margin-top: 165px;
     margin-bottom: 100px;
 }
 /** BENEFITS BLOCK ENDS **/
@@ -582,7 +591,10 @@ footer {
 }
 .half-circle-background {
     width: 100%;
-    margin-top: -255px;
+    height: 100px;
+    background-image: url("../images/bg-line.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .footer-tip {
     color: #80867d;
@@ -630,9 +642,6 @@ footer {
         max-width: 390px;
         font-size: calc(1em + 0.8vw);
     }
-    .half-circle-background {
-        margin-top: -200px;
-    }
 }
 @media (max-width: 1078px) {
     .slogn {
@@ -657,16 +666,17 @@ footer {
     .main-bottom-block {
         margin-top: 85px;
     }
-    .benefit-block-item {
-        width: 100%;
-        display: inline-block;
-        margin: 65px;
+    .benefit-block-wrapper {
+        width: 250px;
     }
-    .benefit-block {
-        max-width: 560px;
+    .benefit-button {
+        margin-top: 180px;
     }
 }
 @media (max-width: 1024px) {
+    .half-circle-background {
+        margin-top: 100px;
+    }
     footer {
         display: none;
     }
@@ -705,6 +715,17 @@ footer {
         line-height: 14px;
         width: 230px;
         padding: 15px 0;
+    }
+}
+@media (max-width: 900px) {    
+    .benefit-block {
+        margin-top: 60px
+    }
+    .benefit-block-item {
+        margin: 77px 36px 78px 40px;
+    }
+    .benefit-button {
+        margin-top: 85px;
     }
 }
 @media (max-width: 870px) {
@@ -766,6 +787,12 @@ footer {
         top: 9px;
         left: 6.48px;
         padding: 6px;
+    }
+    .benefit-block-heading {
+        font-size: 42px;
+        line-height: 55px;
+        max-width: 50%;
+        margin: 0 auto;
     }
     #menu__toggle {
       opacity: 0;
@@ -921,7 +948,13 @@ footer {
     }
     .benefit-block-item {
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 80px;
+    }
+    .benefit-button {
+        padding: 8px 0;
+    }
+    .slick-dots {
+        left: 0px;
     }
 }
 @media (max-width: 545px) {
@@ -958,6 +991,11 @@ footer {
     }
     .benefit-block-heading {
         font-size: 20px;
+        padding-top: 50px;
+        line-height: 40px;
+    }
+    .benefit-block-item {
+        margin-bottom: 10px;
     }
     .benefit-block-title {
         font-size: 20px;
@@ -967,11 +1005,18 @@ footer {
         font-size: 16px;
         line-height: 24px;
     }
+    .benefit-button {
+        padding: 7px 0;
+    }
+    
+    .benefit-block {
+        margin-top: 0px;
+    }
     .benefit-block-number {
         font-size: 80px;
     }
     .benefit-block-wrapper {
-        width: 195px;
+        width: 175px;
     }
     .number {
         font-size: 34px;
@@ -983,6 +1028,9 @@ footer {
     }
 }
 @media (max-width: 370px) {
+    .half-circle-background {
+        height: 60px;
+    }
     .main-label {
         font-size: 12px;
         padding-right: 5px;
