@@ -144,7 +144,7 @@ body {
 }
 .logo-img {
     vertical-align: middle;
-    margin-right: 12px;
+    margin: 0 12px;
 }
 nav {
     display: inline-block;
@@ -980,6 +980,9 @@ footer {
     }
 }
 @media (max-width: 545px) {
+    .half-circle-background {
+        margin-top: 60px;
+    }
     .bottom-block-title {
         font-size: calc(1em + 2.6vw);
         line-height: 30px;
